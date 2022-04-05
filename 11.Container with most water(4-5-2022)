@@ -1,32 +1,19 @@
 #include <bits/stdc++.h>
 
 using namespace std;
-void display(vector<int> arr) {
-    for(int a: arr) {
-        cout << a << " ";
-    }
-    cout << endl;
-}
+
 int doSomething(vector<int> &arr) {
-    int N = arr.size();
+    int N = height.size();
     int res = INT_MIN;
-    vector<int> leftArr(N), rightArr(N);
-    leftArr[0] = 0;
-    rightArr[N-1] = N-1;
-    // vector<int> rightArr(N);
-    for(int i = 1, j = N-2; i < N; i++, j--) {
-        leftArr[i] = (arr[leftArr[i-1]] >= arr[i]) ? leftArr[i-1] : i;
-        rightArr[j] = (arr[rightArr[j+1]] >= arr[j]) ? rightArr[j+1] : j;
-        // if(arr[leftArr[i-1]] > arr[i])
-        //     leftArr[i] = i;
-    }
-    // display(leftArr);
-    // display(rightArr);
-    for(int i = 0; i < N; i++) {
-        res = max(res, ( min(arr[leftArr[i]], arr[rightArr[i]]) * (rightArr[i]- leftArr[i]) ));    
+    for(int i = 0, j = N-1; i < j;) {
+        res = max(res, 
+                  ( min(height[i], height[j]) * (j-i)));
+        if(height[i] <= height[j])
+            i++;
+        else
+            j--;
     }
     return res;
-    return 343;
 }
 
 int main()
