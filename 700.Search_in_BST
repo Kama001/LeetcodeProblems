@@ -3,7 +3,7 @@ if(!root)
 if(root->val > val)
     return searchBST(root->right);
 else if(root->val < val)
-    return search(root->left);
+    return searchBST(root->left);
 else
     return root;
 
