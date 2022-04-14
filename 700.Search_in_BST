@@ -1,8 +1,9 @@
 if(!root)
     return NULL;
 if(root->val > val)
-    searchBST(root->right);
+    return searchBST(root->right);
 else if(root->val < val)
-    search(root->left);
+    return search(root->left);
 else
     return root;
+
