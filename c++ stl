@@ -1,0 +1,5 @@
+// to find cumSum
+int cumsum = accumulate(matchsticks.begin(), matchsticks.end(),0);
+
+// to sort vector int reverse order
+sort(matchstick.rbegin(), rend());
