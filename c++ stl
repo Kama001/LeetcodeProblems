@@ -18,3 +18,9 @@ public:
         return dfs(hasApple,0,0,-1)*2;     //Result is doubled the distance travelled as per our observation.
     }
 };
+
+================
+=== oops pdf ===
+================
+
+https://drive.google.com/file/d/1C9xnlHfyL8lijGN18sN2_xoCZD5xwZsr/view?usp=sharing
