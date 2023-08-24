@@ -37,6 +37,7 @@ I've implemented a Jenkins automation pipeline for a Web Application Deployment.
 Created Ansible scripts which provided an environment for running an Automation pipeline.
 Created an automation pipeline script for Static code Analysis tool.
 I have experience working with docker, such as creating docker files and docker images for deployment. 
+Currently working on creating platform for SCA tool which includes writing terraform scripts, creating docker images, and security related things.
 
 Experience with Linux
 I'm quite used to Linux operating system as I'm working with that since my Bachelors and have experience using AWS linux AMI
